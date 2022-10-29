@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajouter un patient</title>
+	<link rel="stylesheet" href="styleAA.css">
+</head>
+<body>
+		
+ <div class="form-style-5">
+	<form name="f" method="POST" action="ajoutPat.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h2 align="center">Ajout d'un patient</h2>
+			<input type="text" name="numS" size="20" placeholder="numero de securite social*" required>
+			<input type="text" name="nom" size="20" placeholder="nom*" required>
+			<input type="text" name="prenom" size="20" placeholder="prenom*" required>
+			<input type="text" name="age" size="20" placeholder="age*" required>
+			<input type="text" name="antec" size="20" placeholder="antecedent medical*" required>
+			<input type="submit" value="Ajouter" name="B1">
+			<input type="reset" value="Renitialiser" name="B2">
+			
+		</fieldset>
+    </form>
+  </div>  
+
+</body>
+</html>

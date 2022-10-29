@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajouter un equipement</title>
+	<script type="text/javascript">
+		function test()
+		{
+			
+			if(document.f.ser.selectedIndex == 0)
+			{
+				alert("il faut saisir un service");
+			}	
+		}
+	</script>
+	<link rel="stylesheet" href="styleEquip.css">
+</head>
+<body>
+		
+<div class="form-style-5">
+	<form name="f" method="POST" action="ajoutEquip.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h1 align="center">Ajout d'un equipement</h1>
+			
+			<input type="text" name="codeE" size="20" placeholder="Code equipement*" required>
+			
+			<input type="text" name="nomE" size="20" placeholder="Nom de l'equipement*" required>
+    
+      	 	<textarea name="carE" rows="3" cols="29" placeholder="Caracteristiques*"></textarea>
+			
+			<select name="ser">		
+					<option value=2>-- Service Adequat--</option>
+					<option value="Medical">Medical</option>
+					<option value="Pharmacie">Pharmacie</option>
+					<option value="Financier">Financier</option>
+					<option value="Reception">Reception</option>
+			</select>	
+			
+			<input type="text" name="chamE" size="20" placeholder="Chambre*" required>
+
+			<input type="submit" value="Ajouter" name="B1">
+			<input type="reset" value="Réinitialiser" name="B2">
+			
+		</fieldset>
+    </form>
+</div>    
+
+</body>
+</html>

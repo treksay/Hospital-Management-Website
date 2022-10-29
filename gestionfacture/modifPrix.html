@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modifier le prix d'un traitement</title>
+      <script language="javascript">
+    function test()
+    {
+      if(f.codeT.value.length == 0){
+        alert('il faut saisir un code traitement');
+      }
+      if(f.nvP.value.length == 0){
+        alert('il faut saisir le nouveau prix');
+      }
+    }
+  </script>
+    <link rel="stylesheet" href="styleFacture.css">
+  </head>
+  <body>
+   
+<div class="form-style-5">
+    <form name="f" method="POST" action="modifPrix.php" onsubmit="test()">
+      <fieldset style="padding: 2"> 
+        <h1 align="center">Modifier le prix d'un traitement</h1>
+        <input type="text" name="codeT" size="20" placeholder="Code Traitement*">
+        <input type="text" name="nvP" size="20" placeholder="Nouveau Prix*">
+        <input type="submit" value="Modifier">
+        <input type="reset" value="Réinitialiser">
+        </fieldset>
+    </form>
+   </div> 
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lister le Peronnel</title>
+	<script type="text/javascript">
+		function test1()
+		{
+			if(document.f.s1.selectedIndex == 0)
+			{
+				alert("il faut saisir une fonction");
+			}	
+		}
+		function test2()
+		{
+				if(document.f.s2.selectedIndex == 0)
+			{
+				alert("il faut saisir un service");
+			}	
+		}
+		
+	</script>
+	<link rel="stylesheet" href="stylePerso.css">
+</head>
+<body>
+	<h1 align="center">Affichage des clients</h1>
+<div class="form-style-5">
+<form nom="f1" method="POST" action="listerperso-spec.php" onsubmit="test1()">
+	<fieldset style="padding: 2">
+	<legend>Lister les clients par specialite</legend>
+	<select name="s1">
+				<option>-- Fonction --</option>
+							
+					<option value="medecin en chef">Medecin en chef</option>
+					<option value="medecin">Medecin</option>
+					<option value="infirmier">Infirmier</option>
+					<option value="nettoyage">Nettoyage</option>
+					<option value="financier">Financier</option>
+					<option value="Pharmacie">Pharmacien</option>
+					<option value="Agent d'accueil">Agent d'acceuil</option>
+			</select>	
+	<input type="submit" value="Afficher" name="B1" id="minisubmit"> <input type="reset" value="Reset" name="B2" id="minireset">
+	</fieldset></form>
+</div>
+<div class="form-style-5">
+<form nom="f2" method="POST" action="listerperso-service.php" onsubmit="test2()">
+	<fieldset style="padding: 2">
+	<legend>Lister les clients par service</legend>
+	<select name="s2">		
+					<option value=2>-- Service --</option>
+					<option value="Medical">Medical</option>
+					<option value="Pharmacie">Pharmacie</option>
+					<option value="Financier">Financier</option>
+					<option value="Reception">Reception</option>
+			</select>	
+	<input type="submit" value="Afficher" name="B1" id="minisubmit"> <input type="reset" value="Reset" name="B2" id="minireset">
+	</fieldset></form></div>
+</body>
+
+
+</body>
+</html>

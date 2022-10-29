@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mise a jour d'un traitement</title>
+     <link rel='stylesheet' href='stylePatient.css'>
+  </head>
+  <body>
+    
+<div class="form-style-5">  
+	<form name="f" method="POST" action="majT.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h1 align="center">Modification du personnel</h1>
+		
+			<input type="text" name="numS" size="35" placeholder="Numero de securite social*" required>
+
+			<textarea name="Tr" rows="3" cols="29" placeholder="Nouveau traitement" required></textarea>
+	        <input type="submit" value="Modifier" name="B1">
+			<input type="reset" value="Réinitialiser" name="B2">
+			
+		</fieldset>
+    </form>
+
+  </body>
+</html>

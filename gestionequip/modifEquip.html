@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modifier les caracteristiques d'un equipement</title>
+    <script language="javascript">
+  		function test()
+  		{
+  			if(f.codeE.value.length == 0){
+  				alert('il faut saisir un code!');
+  			}
+  			if(f.carE.value.length == 0){
+  				alert('il faut saisir les nouvelles caracteristiques!');
+  			}}
+    </script>
+    <link rel="stylesheet" href="styleEquip.css">
+  </head>
+  <body>
+    
+<div class="form-style-5">
+	<form name="f" method="POST" action="modifEquip.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h1 align="center">Modifier les caracteristiques d'un equipement</h1><br>
+			<input type="text" name="codeE" size="20" placeholder="Code equipement">
+      
+      <textarea name="carE" rows="3" cols="29" placeholder="Les nouvelles caracteristiques"></textarea>
+      <input type="submit" value="Connecter" name="B1">
+      <input type="reset" value="Reinitialiser" name="B2">
+      </fieldset>
+  </form>
+ </div> 
+
+  </body>
+</html>

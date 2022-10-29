@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Affectation d'un patient à une chambre</title>
+    <script language="javascript">
+  		function test()
+  		{
+  			if(f.codeE.value.length == 0){
+  				alert('il faut saisir un code!');
+  			}
+  			if(f.carE.value.length == 0){
+  				alert('il faut saisir les nouvelles caracteristiques!');
+  			}}
+    </script>
+    <link rel="stylesheet" href="styleAA.css">
+  </head>
+  <body>
+    
+<div class="form-style-5">
+	<form name="f" method="POST" action="affectPat.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h2 align="center">Affecter un patient à une chambre</h2><br>
+			<input type="text" name="numS" size="20" placeholder="numero de securité social">
+      <input type="text" name="chambre" size="20" placeholder="chambre*">
+    
+      <input type="submit" value="affecter" name="B1">
+      <input type="reset" value="Reinitialiser" name="B2">
+      </fieldset>
+  </form>
+ </div> 
+
+  </body>
+</html>

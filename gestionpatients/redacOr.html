@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redaction d'une ordonnance</title>
+    <link rel='stylesheet' href='stylePatient.css'>
+  </head>
+  <body>
+    
+<div class="form-style-5"> 
+  <form name="f" method="POST" action="FPDF/redacOr.php" >
+      <h1 align="center">Redaction d'une ordonnance</h1>
+   
+      <input type="date" name="d" placeholder="Date" required>
+      
+      <textarea name="ord" rows="3" cols="29" placeholder="Ordonnance" style="resize: none" required></textarea>
+    
+        <input type="text" name="nom" placeholder="Nom et Prenom du medecin" required>
+        <input type="submit" value="Exporter en pdf" name="B1">
+        <input type="reset" value="Réinitialiser" name="B2">
+      
+    </fieldset>
+    </form>
+</div>    
+  </body>
+</html>

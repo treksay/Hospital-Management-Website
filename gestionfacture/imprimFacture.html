@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Redaction des factures</title>
+	<link rel="stylesheet" href="styleFacture.css">
+</head>
+<body> 
+   <div class="form-style-5">	
+	<form name="f" method="POST" action="FPDF/imprimFacture.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h1>Imprimer une facture d'un patient</h1>
+			
+			<input type="text" name="numS" size="20" placeholder="Numéro de securité sociale du patient*">
+			<input type="submit" value="Ajouter" name="B1">
+			<input type="reset" value="Reinitialiser" name="B2">
+		</fieldset>
+	</form>		
+   </div>	
+</body>	

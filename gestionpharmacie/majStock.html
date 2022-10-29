@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mise a jours de la quantite d'un traitement</title>
+      <script language="javascript">
+    function test()
+    {
+      if(f.codeMed.value.length == 0){
+        alert('il faut saisir un code medicament');
+      }
+      if(f.nvq.value.length == 0){
+        alert('il faut saisir la nouvelle quantite');
+      }
+    }
+  </script>
+    <link rel="stylesheet" href="stylePharmacie.css">
+  </head>
+  <body>
+   
+<div class="form-style-5">
+    <form name="f" method="POST" action="majStock.php" onsubmit="test()">
+      <fieldset style="padding: 2"> 
+        <h2 align="center">Mettre a jour la quantite d'un medicament</h2>
+        <input type="text" name="codeMed" size="20" placeholder="Code Medicament*">
+        <input type="text" name="nvq" size="20" placeholder="Nouvelle quantite*">
+        <input type="submit" value="Mettre a jours">
+        <input type="reset" value="Réinitialiser">
+        </fieldset>
+    </form>
+   </div> 
+  </body>
+</html>

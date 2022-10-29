@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajout du personnel</title>
+	<script type="text/javascript">
+		function test()
+		{
+			if(document.f.fonction.selectedIndex == 0)
+			{
+				alert("il faut saisir une fonction");
+			}	
+			if(document.f.service.selectedIndex == 0)
+			{
+				alert("il faut saisir un service");
+			}	
+		}
+	</script>
+	<link rel="stylesheet" href="stylePerso.css">
+</head>
+<body>
+<div class="form-style-5">
+	<form name="f" method="POST" action="ajoutperso.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h1 align="center">Ajout du personnel</h1>
+			
+			<input type="text" name="nom" size="20"  placeholder="nom*" required>
+			
+			<input type="text" name="prenom" size="20" placeholder="prenom*" required>
+			<select name="service">		
+					<option value=2>-- Service --</option>
+					<option value="Medical">Medical</option>
+					<option value="Pharmacie">Pharmacie</option>
+					<option value="Financier">Financier</option>
+					<option value="Reception">Reception</option>
+			</select>	
+			<select name="fn">
+				<option>-- Fonction --</option>
+					<option value="gestionnaire">Gestionnaire</option>		
+					<option value="MedecinEnChef">Medecin en chef</option>
+					<option value="medecin">Medecin</option>
+					<option value="infirmier">Infirmier</option>
+					<option value="nettoyage">Nettoyage</option>
+					<option value="financier">Financier</option>
+					<option value="pharmacien">Pharmacien</option>
+					<option value="AgentAccueil">Agent d'acceuil</option>
+			</select>	
+			
+
+			<input type="text" name="log" size="20" placeholder="login*" required>
+		
+			<input type="password" name="pwd" size="20" placeholder="mot de passe*"  required>
+
+			<input type="submit" value="Ajouter" name="B1">
+			<input type="reset" value="Réinitialiser" name="B2">
+			
+		</fieldset>
+    </form>
+</div>    
+
+</body>
+</html>

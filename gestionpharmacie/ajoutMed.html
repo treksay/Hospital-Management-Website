@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajouter un medicament</title>
+	<script language="javascript">
+		function test()
+		{
+			if(f.codeE.value.length == 0){
+				alert('il faut saisir un code!');
+			}
+			if(f.nom.value.length == 0){
+				alert('il faut saisir un nom !');
+			}
+			if(f.carE.value.length == 0){
+				alert('il faut saisir les caracteristiques!');
+			}
+			if(f.ser.value.length == 0){
+				alert('il faut saisir un service !');
+			}
+			if(f.chamE.value.length == 0){
+				alert('il faut saisir une Chambre !');
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="stylePharmacie.css">
+</head>
+<body>
+		
+ <div class="form-style-5">
+	<form name="f" method="POST" action="ajoutMed.php" onsubmit="test()">
+		<fieldset style="padding: 2">
+			<h2 align="center">Ajout d'un equipement</h2>
+			<input type="text" name="codeMed" size="20" placeholder="Code du medicament*">
+			<input type="text" name="nomMed" size="20" placeholder="nom du medicament*">
+			<input type="text" name="qte" size="20" placeholder="quantite*">	
+			<input type="submit" value="Ajouter" name="B1">
+			<input type="reset" value="Réinitialiser" name="B2">
+			
+		</fieldset>
+    </form>
+  </div>  
+
+</body>
+</html>
